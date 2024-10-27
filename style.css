@@ -1,0 +1,211 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(151, 46, 151);
+}
+
+header .logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.banner img{
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.banner img:nth-child(1){
+    animation: fadeInOut 6s infinite;
+}
+
+.banner img:nth-child(2){
+    animation: fadeInOut 6s infinite 2s;
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+
+}
+
+/* Categories Section */
+.categories {
+    padding: 50px;
+    text-align: center;
+    margin-top: 320px;
+    background-color: plum;
+    
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.category-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.category-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 10px;
+    text-align: center;
+    background-color: plum;
+    margin-top: 5px;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: purple;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color:rgb(158, 88, 158);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgb(59, 12, 59);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
